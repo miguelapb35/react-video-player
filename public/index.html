@@ -5,6 +5,8 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/css?family=Hind:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">    
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -27,6 +29,27 @@
     <title>React App</title>
   </head>
   <body>
+<!--     <input hidden value="{&quot;playlistId&quot;:&quot;wbn_rdx&quot;,&quot;playlist&quot;:[{&quot;num&quot;:1,&quot;title&quot;:&quot;Introduction and setup&quot;,&quot;id&quot;:&quot;ghI-gMi1DPc&quot;,&quot;duration&quot;:&quot;10:51&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/ghI-gMi1DPc&quot;},
+    {&quot;num&quot;:2,&quot;title&quot;:&quot;Folder structure, midware and provider&quot;,&quot;id&quot;:&quot;ejJlnMPCmNo&quot;,&quot;duration&quot;:&quot;13:27&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/ejJlnMPCmNo&quot;},
+    {&quot;num&quot;:3,&quot;title&quot;:&quot;Action creators for the Home Page&quot;,&quot;id&quot;:&quot;4tuFk_pdWVo&quot;,&quot;duration&quot;:&quot;17:35&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/4tuFk_pdWVo&quot;},
+    {&quot;num&quot;:4,&quot;title&quot;:&quot;Reducers for the Home Page&quot;,&quot;id&quot;:&quot;Jh6Abc_bJ50&quot;,&quot;duration&quot;:&quot;08:34&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/Jh6Abc_bJ50&quot;},
+    {&quot;num&quot;:5,&quot;title&quot;:&quot;Connecting the Home Page&quot;,&quot;id&quot;:&quot;ztHLpdVv9Vc&quot;,&quot;duration&quot;:&quot;13:42&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/ztHLpdVv9Vc&quot;},
+    {&quot;num&quot;:6,&quot;title&quot;:&quot;Quick Recap&quot;,&quot;id&quot;:&quot;iV5GDHY_cJk&quot;,&quot;duration&quot;:&quot;05:50&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/iV5GDHY_cJk&quot;},
+    {&quot;num&quot;:7,&quot;title&quot;:&quot;Completing the App&quot;,&quot;id&quot;:&quot;XMmSM0TqQ2k&quot;,&quot;duration&quot;:&quot;16:33&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/XMmSM0TqQ2k&quot;},
+    {&quot;num&quot;:8,&quot;title&quot;:&quot;BONUS - Persist the state in sessionStorage&quot;,&quot;id&quot;:&quot;r5fLW4PUrSQ&quot;,&quot;duration&quot;:&quot;10:06&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/r5fLW4PUrSQ&quot;},
+    {&quot;num&quot;:9,&quot;title&quot;:&quot;BONUS - Higher order functions&quot;,&quot;id&quot;:&quot;L89dt9sHNJ0&quot;,&quot;duration&quot;:&quot;06:09&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/L89dt9sHNJ0&quot;}
+    ]}" name="videos"> -->
+    <input hidden value="{&quot;playlistId&quot;:&quot;PLbrUV5p1P4KlDO-YD6aPP3jRzZJm85-ad&quot;,&quot;playlist&quot;:[{&quot;num&quot;:1,&quot;title&quot;:&quot;Well..That Wasn't a Good Idea&quot;,&quot;id&quot;:&quot;KtsAZrkbyeQ&quot;,&quot;duration&quot;:&quot;10:30&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/KtsAZrkbyeQ&quot;},
+    {&quot;num&quot;:2,&quot;title&quot;:&quot;One in a Million Coincidences(PART 3!)&quot;,&quot;id&quot;:&quot;_RBISO6jaWI&quot;,&quot;duration&quot;:&quot;10:02&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/_RBISO6jaWI&quot;},
+    {&quot;num&quot;:3,&quot;title&quot;:&quot;People Who Beat Coronavirus With Their Sense Of Humor&quot;,&quot;id&quot;:&quot;bw-_yI3OYqw&quot;,&quot;duration&quot;:&quot;10:20&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/bw-_yI3OYqw&quot;},
+    {&quot;num&quot;:4,&quot;title&quot;:&quot;You Smile You Lose! ❤️️&quot;,&quot;id&quot;:&quot;_LT68YSG3K0&quot;,&quot;duration&quot;:&quot;12:21&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/_LT68YSG3K0&quot;},
+    {&quot;num&quot;:5,&quot;title&quot;:&quot;I Got Goosebumps While Making This Video ❤️️&quot;,&quot;id&quot;:&quot;gXn97-smQE4&quot;,&quot;duration&quot;:&quot;05:38&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/gXn97-smQE4&quot;},
+    {&quot;num&quot;:6,&quot;title&quot;:&quot;Hilarious Moms Who Deserve An Award For Parenting 😂&quot;,&quot;id&quot;:&quot;Zug_ELcHE40&quot;,&quot;duration&quot;:&quot;08:57&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/Zug_ELcHE40&quot;},
+    {&quot;num&quot;:7,&quot;title&quot;:&quot;People Who Tried To Show off And..&quot;,&quot;id&quot;:&quot;fxlV8HIoxs4&quot;,&quot;duration&quot;:&quot;09:16&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/fxlV8HIoxs4&quot;},
+    {&quot;num&quot;:8,&quot;title&quot;:&quot;Videos With Unexpected Endings&quot;,&quot;id&quot;:&quot;sdLJ07NFiCU&quot;,&quot;duration&quot;:&quot;14:52&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/sdLJ07NFiCU&quot;},
+    {&quot;num&quot;:9,&quot;title&quot;:&quot;Wholesome Animals Friendships That Will Melt Your Heart ❤️️&quot;,&quot;id&quot;:&quot;T7woKP3O5oM&quot;,&quot;duration&quot;:&quot;10:43&quot;,&quot;video&quot;:&quot;https://www.youtube.com/embed/T7woKP3O5oM&quot;}
+    ]}" name="videos">
+        
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
